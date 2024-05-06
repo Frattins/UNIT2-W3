@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Creazione Utente</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-3">Creazione Utente</h2>
+      <div class="form-group">
+        Nome: <input type="text" id="firstName" class="form-control" /> Cognome:
+        <input type="text" id="lastName" class="form-control" /> Età:
+        <input type="number" id="age" class="form-control" /> Località:
+        <input type="text" id="location" class="form-control" />
+        <button
+          type="button"
+          class="btn btn-primary mt-3"
+          onclick="createUser()"
+        >
+          Crea Utente
+        </button>
+        <button type="button" class="btn btn-info mt-3" onclick="compareAges()">
+          Confronta Età
+        </button>
+      </div>
+      <h2>Utenti Creati</h2>
+      <ul id="userList" class="list-group"></ul>
+      <div class="row">
+        <div class="col-md-12">
+          <p id="ageComparisonResult" class="alert alert-info"></p>
+        </div>
+      </div>
+    </div>
+    <script src="user.js"></script>
+  </body>
+</html>

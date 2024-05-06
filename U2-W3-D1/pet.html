@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Creazione Pet</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-3">Creazione Pet</h2>
+      <div class="form-group">
+        Nome Animale:
+        <input type="text" id="petName" class="form-control" /> Nome
+        Proprietario:
+        <input type="text" id="ownerName" class="form-control" /> Specie:
+        <input type="text" id="species" class="form-control" /> Razza:
+        <input type="text" id="breed" class="form-control" />
+        <button
+          type="button"
+          class="btn btn-primary mt-3"
+          onclick="createPet()"
+        >
+          Crea Pet
+        </button>
+        <button
+          type="button"
+          class="btn btn-info mt-3"
+          onclick="checkSameOwner()"
+        >
+          Verifica Proprietario
+        </button>
+      </div>
+      <h2>Pets Creati</h2>
+      <ul id="petList" class="list-group"></ul>
+      <div class="row">
+        <div class="col-md-12">
+          <p id="ownerCheckResult" class="alert alert-info"></p>
+        </div>
+      </div>
+    </div>
+    <script src="pet.js"></script>
+  </body>
+</html>
